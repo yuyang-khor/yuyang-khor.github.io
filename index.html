@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/6cb7d9f2d7.js" crossorigin="anonymous"></script></head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i id="open-bar" class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i id="open-bar" class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p><img src="images/sp_logo.jpg" alt="" id="logo_sp">Singapore Polytechnic Graduate</p>
+                <h1>Hi, I'm Khor Yu Yang,<br> a <span class="autotype"></span></h1>
+            </div>
+        </div>
+    </div>
+    <!-- About myself -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="mySlides fade">
+                        <img src="images/me.jpg" alt="userpic">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/me2.jpg" alt="userpic2">
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="images/me3.jpg" alt="userpic3">
+                    </div>
+                    <div style="text-align:center">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>Hello! I am a recent graduate from Singapore Polytechnic, 
+                        specialized in a Diploma in Applied AI & Analytics. 
+                        Throughout my studies, I have developed a strong foundation in both 
+                        front-end and back-end development, data analysis skills as well as advanced machine learning 
+                        techniques. I am excited to bring my skills and enthusiasm to new challenges and 
+                        continue learning and growing in the field of AI and technology.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('exp')">Working Experience</p>
+                        <p class="tab-links" onclick="opentab('edu')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>AI/ML Development</span><br>DEEP & Reinforcement Learning using Python <img src="images/dl.jpg" alt=""></li>
+                            <li><span>Data Analysis/Visualization</span><br>Efficient in Tableau, Oracle Fusion Analytic Warehouse & Python <img src="images/da.jpg" alt=""></li>
+                            <li><span>Web Development</span><br>Front/Back-end using HTML, CSS, Javascript & SQL  <img src="images/web.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="exp">
+                        <ul>
+                            <li><span>2023 Sept - 2024 Feb</span><br>Apps Solution Engineer Intern at Oracle Singapore <img src="images/intern.png" alt=""></li>
+                            <li><span>2021 Feb - 2023 Aug</span><br>Part-time Tea Barista, CHICHASANCHEN <img src="images/bubble.jpg" alt="tea"></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="edu">
+                        <ul>
+                            <li><span>2021 Apr - 2024 Apr</span><br>Diploma in Applied AI & Analytics, Singapore Polytechnic</li>
+                            <li><span>2017 Jan - 2020 Sept</span><br>GCE O's Level, Hua Yi Secondary School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Achievements -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="subtitle">My Achievements <img src="images/trophy.jpg" alt=""></h1>
+            <div class="projects-list">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h2>Oracle Cloud Infrastructure AI 2023 Certified Foundations Associate</h2>
+                    <p>
+                        Demonstrated fundamental knowledge of Artificial Intelligence, Machine Learning, 
+                        and related services provided by Oracle Cloud Infrastructure (OCI)
+                    </p>
+                    <a class='show-cret' onclick="openIMG('OCI-AI')">Show Credentials</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-microsoft"></i>
+                    <h2>Microsoft Azure AI Fundementals</h2>
+                    <p>
+                        Demonstrated knowledge of machine learning and AI concepts and 
+                        related Microsoft Azure services
+                    </p>
+                    <a class='show-cret' href="https://www.credly.com/badges/3b5662c2-ddff-42e3-9037-29bef27b488f">Show Credentials</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-salesforce"></i>
+                    <h2>Tableau Desktop Specialist</h2>
+                    <p>
+                        Displayed foundational knowledge and skills related to Tableau Desktop, 
+                        validates core Tableau knowledge
+                    </p>
+                    <a class='show-cret' onclick="openIMG('TDS')">Show Credentials</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-robot"></i>
+                    <h2>AI Ethics & Governance</h2>
+                    <p>
+                        Displayed good understanding of the principles and key areas of AI Ethics and Governance BoK, 
+                        and how it can be applied to projects with AI component 
+                    </p>
+                    <a class='show-cret' onclick="openIMG('AIEG')">Show Credentials</a>
+                </div>
+            </div>
+        </div>
+        <div class="container2">
+            <img id="tableauD" src="images/tableau_cert.jpg" alt="">
+            <img id="OCIAI" src="images/OCI_AI.jpg" alt="">
+            <img id="ai_eg" src="images/AIEG.jpg" alt="">
+        </div>
+    </div>
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">Polytechnic Final Year Project</h1>
+            <h3 class="port-sub">
+                <span>Data Analysis & Predictive Modelling</span> of Sport Singapore (<span>SportSG</span>) 
+                Academies and Clubs Programmes for Children and Youth
+            </h3>
+            <div class="card">
+                <h2 class="port-desc">
+                    Project Description
+                </h2>
+                <input id="ch" type="checkbox">
+                <p>
+                    My team and I analyzed data regarding Sport Singapore's Youth participants in order to provide insights
+                    <div class="content-hide">
+                        <p>
+                            on how SportSG can strategize, design and develop sport programs to retain and increase participation rate. <br>
+                            As well as making use of Python's Artificial Intelligence libraries (sklearn,XGBoost) to predict <br>
+                            participant behavior. After understanding and cleaning the data, we created metrics such as the Retention, <br>
+                            Progression, Conversion and Transfer metrics on Python to fully understand their demographics and behavior, <br>
+                            before putting them all in easily understandable storyboards on Tableau to present actionable insights to <br>
+                            Sport Singapore. We created models that predict sport academy member retention and a programme creator model <br>
+                            that can predict the estimated participation based on user inputted factors (Duration of programme, etc.). <br>
+                            Afterwards, we put them in a user-friendly app created using Python for Sport Singapore to use <br>
+                            <img src="images/python.png" alt="">
+                        </p>
+                        <label for="ch">Show less</label>
+                    </div>
+                </p>
+                <label for="ch">Read more</label>
+            </div>
+
+            <div class="worklist">
+                <div class="work">
+                    <img id="grp-img" src="images/fyp_grppic.jpg" alt="">
+                    <div class="layer-grp">
+                        <h2>Group Photo</h3>
+                        <p>Farewell picture of our team with our FYP client, SportSG
+                            as we mark the end of the project</p>
+                        <a onclick="openIMG('grp')"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <div class="modal" id="MyModal">
+                        <span class="close">&times;</span>
+                        <img class="modal-content" id="img01">
+                    </div>
+                </div>
+                <div class="work">
+                    <img id="post-img" src="images/fyp_poster.jpg" alt="">
+                    <div class="layer">
+                        <h2>Project Poster</h3>
+                        <p>Poster summarized the whole objective of the project, steps & tools
+                            our team ultilized and the final showcase of our solutions with insights
+                        </p>
+                        <a onclick="openIMG('post')"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <!-- <img src="images/fyp_poster.jpg" alt=""> -->
+                    <embed src="images/test_fyp.pdf" width="500" height="400" 
+                    type="application/pdf">
+                    <div class="layer-pdf">
+                        <h2>SportSG Testimonial</h3>
+                        <p>Completing the project with excellence, I received a letter of 
+                            commendation from the Deputy Director of SportSG</p>
+                        <!-- <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="work-vid">
+                <div class="layer-vid">
+                    <h1>Project Video</h3>
+                    <video width="620" height="540" controls>
+                        <source src="images/fyp-video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>yuyangkhor89@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/khor-yu-yang-006067212/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/yxyxngg/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" placeholder="Enter your email" required>
+                        <textarea name="Message" rows=6 placeholder="What do you have for me?"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Yu Yang. All rights reserved</p>
+        </div>
+    </div>
+<script>
+
+    var tablinks = document.getElementsByClassName('tab-links')
+    var tabcontents = document.getElementsByClassName('tab-contents')
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+    //Model Image
+    // Get the modal
+    var modal = document.getElementById("MyModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img_grp = document.getElementById("grp-img");
+    var img_post = document.getElementById("post-img");
+    // Cert Images
+    var img_TDS = document.getElementById("tableauD");
+    var img_OCIAI = document.getElementById("OCIAI");
+    var img_AIEG = document.getElementById("ai_eg");
+
+    var modalImg = document.getElementById("img01");
+    function openIMG(arg){
+        modal.style.display = "block";
+        if (arg == 'grp'){
+            modalImg.src = img_grp.src;
+        } else if (arg == 'post'){
+            modalImg.src = img_post.src;
+        } else if (arg == 'TDS'){
+            modalImg.src = img_TDS.src;
+        } else if (arg == 'OCI-AI'){
+            modalImg.src = img_OCIAI.src;
+        } else if (arg == 'AIEG'){
+            modalImg.src = img_AIEG.src;
+        }
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+</script>
+<script>
+    // console.log(stle.getPropertyValue('right'))
+    // var burger = document.getElementById('open-bar');
+    // function OCmenu(){
+    //     var sidemenu = document.getElementById('sidemenu');
+    //     var stle = window.getComputedStyle(sidemenu);
+    //     console.log(stle.getPropertyValue('right'))
+    //     if (stle.getPropertyValue('right') == '-150px') {
+    //         sidemenu.style.right = '0px';
+    //     } else if (stle.getPropertyValue('right') == '0px'){
+    //         sidemenu.style.right = '-150px';
+    //     }
+    // }
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxX93sJEPCVjUH2MqAY48tjRHITuzFNxsqLXT5sKq5KAWSI51WwTudMDjmTdwz9rIJ7KQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = 'Message delivered successfully'
+            setTimeout(function(){
+                msg.innerHTML = ""
+            }, 3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+<script>
+    let slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+</script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<!-- Typing Effect -->
+<script>
+    var typed = new Typed(".autotype",{
+        strings: ['student', 'aspired programmer', 'basketball lover'],
+        typeSpeed: 150,
+        backspeed: 150,
+        loop: true
+    })
+</script>
+</body>
+</html>
