@@ -491,7 +491,10 @@ label{
         width: 100%;
     }
 }
-
+/* NS journey */
+#army{
+    padding: 50px 0;
+}
 /* Contact */
 .contact-left{
     flex-basis: 35%;
