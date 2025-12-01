@@ -63,6 +63,7 @@ leadership, teamwork, and adaptability as a junior commander in the army, which 
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('exp')">Working Experience</p>
                         <p class="tab-links" onclick="opentab('edu')">Education</p>
+                        <p class="tab-links" onclick="opentab('pas')">Passions</p>
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
@@ -78,6 +79,12 @@ leadership, teamwork, and adaptability as a junior commander in the army, which 
                         </ul>
                     </div>
                     <div class="tab-contents" id="edu">
+                        <ul>
+                            <li><span>2021 Apr - 2024 Apr</span><br>Diploma in Applied AI & Analytics, Singapore Polytechnic</li>
+                            <li><span>2017 Jan - 2020 Sept</span><br>GCE O's Level, Hua Yi Secondary School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="pas">
                         <ul>
                             <li><span>2021 Apr - 2024 Apr</span><br>Diploma in Applied AI & Analytics, Singapore Polytechnic</li>
                             <li><span>2017 Jan - 2020 Sept</span><br>GCE O's Level, Hua Yi Secondary School</li>
@@ -220,8 +227,31 @@ leadership, teamwork, and adaptability as a junior commander in the army, which 
     <div id="army">
         <div class="container">
             <h1 class="subtitle">National Service (NS) Journey</h1>
-            <div class="journey">
-                <img src="images/"
+            <div class="army-list">
+                <div class="journey">
+                    <img src="images/bmt_solo.jpg" alt="bmt_solo">
+                    <div class="layer-army">
+                        <h3>POP (Pass Out Parade) | 7 DEC 2024</h3>
+                        <p>Enlisted into BMT Tekong on 2nd OCT 2024</p>
+                    </div>
+                </div>
+                <div class="journey">
+                    <img src="images/bmt_grp.jpg" alt="bmt_grp">
+                    <div class="layer-army">
+                        <h3>POP (Pass Out Parade) | 7 DEC 2024</h3>
+                        <p>Enlisted into BMT Tekong on 2nd OCT 2024</p>
+                    </div>
+                </div>
+                <div class="journey">
+                    <img src="images/scgp_solo.jpg" alt="scgp_solo">
+                    <div class="layer-army">
+                        <h3>POP (Pass Out Parade) | 7 DEC 2024</h3>
+                        <p>Enlisted into BMT Tekong on 2nd OCT 2024</p>
+                    </div>
+                </div>
+                <div class="journey">
+                    <img src="images/scgp_grp.jpg" alt="scgp_grp">
+                </div>
             </div>
         </div>
     </div>
@@ -252,8 +282,9 @@ leadership, teamwork, and adaptability as a junior commander in the army, which 
             <p>Copyright © Yu Yang. All rights reserved</p>
         </div>
     </div>
-<script>
 
+<!-- Function to show different abouts me -->
+<script>
     var tablinks = document.getElementsByClassName('tab-links')
     var tabcontents = document.getElementsByClassName('tab-contents')
 
@@ -342,6 +373,7 @@ leadership, teamwork, and adaptability as a junior commander in the army, which 
         .catch(error => console.error('Error!', error.message))
     })
 </script>
+<!-- Slides show for about me -->
 <script>
     let slideIndex = 0;
     showSlides();
