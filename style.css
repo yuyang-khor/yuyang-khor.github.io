@@ -503,18 +503,21 @@ label{
 }
 .journey{
     border-radius: 10px;
+    height: 80%;
     position: relative;
     overflow: hidden;
 }
 .journey img{
     width: 100%;
     border-radius: 10px;
+    padding-bottom: 10px;
     display: flex;
+    transition: transform 0.5s;
 }
 .layer-army{
     width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #00ffa2);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -527,10 +530,17 @@ label{
     padding: 0, 40px;
     text-align: center;
     font-size: 15px;
+    transition: height 0.5s;
 }
 .layer-army h3{
     font-weight: 500;
     margin-bottom: 20px;
+}
+.journey:hover img{
+    transform: scale(1.2);
+}
+.journey:hover .layer-army{
+    height: 100%;
 }
 /* .layer-army a{
     margin-top: 20px;

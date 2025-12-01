@@ -229,28 +229,36 @@ leadership, teamwork, and adaptability as a junior commander in the army, which 
             <h1 class="subtitle">National Service (NS) Journey</h1>
             <div class="army-list">
                 <div class="journey">
-                    <img src="images/bmt_solo.jpg" alt="bmt_solo">
+                    <div class="mySlides_NS fade">
+                        <img src="images/bmt_solo.jpg" alt="bmt_solo">
+                    </div>
+                    <div class="mySlides_NS fade">
+                        <img src="images/bmt_grp.jpg" alt="bmt_grp">
+                    </div>
                     <div class="layer-army">
                         <h3>POP (Pass Out Parade) | 7 DEC 2024</h3>
                         <p>Enlisted into BMT Tekong on 2nd OCT 2024</p>
                     </div>
+                    <!-- <div style="text-align:center">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                    </div> -->
                 </div>
                 <div class="journey">
-                    <img src="images/bmt_grp.jpg" alt="bmt_grp">
+                    <div class="mySlides_NS2 fade">
+                        <img src="images/scgp_solo.jpg" alt="scgp_solo">
+                    </div>
+                    <div class="mySlides_NS2 fade">
+                        <img src="images/scgp_grp.jpg" alt="scgp_grp">
+                    </div>
                     <div class="layer-army">
                         <h3>POP (Pass Out Parade) | 7 DEC 2024</h3>
                         <p>Enlisted into BMT Tekong on 2nd OCT 2024</p>
                     </div>
-                </div>
-                <div class="journey">
-                    <img src="images/scgp_solo.jpg" alt="scgp_solo">
-                    <div class="layer-army">
-                        <h3>POP (Pass Out Parade) | 7 DEC 2024</h3>
-                        <p>Enlisted into BMT Tekong on 2nd OCT 2024</p>
-                    </div>
-                </div>
-                <div class="journey">
-                    <img src="images/scgp_grp.jpg" alt="scgp_grp">
+                    <!-- <div style="text-align:center">
+                        <span class="dot"></span> 
+                        <span class="dot"></span> 
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -393,6 +401,31 @@ leadership, teamwork, and adaptability as a junior commander in the army, which 
       slides[slideIndex-1].style.display = "block";  
       dots[slideIndex-1].className += " active";
       setTimeout(showSlides, 3000); // Change image every 3 seconds
+    }
+</script>
+<!-- SLides show for my army journey -->
+ <script>
+    let slidesIndex_army = 0;
+    showSlides_NS();
+    
+    function showSlides_NS() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides_NS");
+      let slides2 = document.getElementsByClassName("mySlides_NS2");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+        slides2[i].style.display = "none";  
+      }
+      slidesIndex_army++;
+      if (slidesIndex_army > slides.length) {slidesIndex_army = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slidesIndex_army-1].style.display = "block";  
+      slides2[slidesIndex_army-1].style.display = "block";  
+      dots[slidesIndex_army-1].className += " active";
+      setTimeout(showSlides_NS, 3000); // Change image every 3 seconds
     }
 </script>
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
