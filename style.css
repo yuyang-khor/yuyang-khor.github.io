@@ -6,18 +6,48 @@
 }
 html{
     scroll-behavior: smooth;
+    
 }
 body{
     background: #080808;
     color: #fff;
 }
+/* ANIMATION effect of website */
+@media( prefers-reduced-motion: no-preference){
+/* img{
+    scale: 0.8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
+} */
+@keyframes fade-in{
+    to { scale: 1; opacity: 1;}
+}
+}
+/* HEADER */
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/bg.jpg);
-    background-size: cover;
-    background-position: center;
+    position: relative;
+    /* background-image: url(images/bg.jpg); */
+    /* background-size: cover; */
+    /* background-position: center; */
     opacity: 0.7;
+}
+#header .background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+#header .background video{
+    height: 110%;
+    width: 100%;
+    opacity: 0.35;
+
 }
 .container{
     padding: 10px 10%;
@@ -52,9 +82,10 @@ nav ul li a:hover {
     width: 140px;
 } 
 .header-text{
-    margin-top: 20%;
+    margin-top: 30%;
+    margin-left: 15%;
     font-size: 25px;
-    opacity: 1;
+    /* opacity: 1; */
 }
 .header-text h1{
     font-size: 50px;
@@ -70,6 +101,11 @@ nav ul li a:hover {
 #about{
     padding: 80px 0;
     color: #ababab;
+    scale: 0.8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
 }
 .row{
     display: flex;
@@ -159,9 +195,14 @@ nav ul li a:hover {
 .tab-contents.active-tab{
     display: block;
 }
-/* Achievements */
+/* ACHIEVEMENTS */
 #projects{
     padding: 30px 0;
+    scale: 0.8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
 }
 .subtitle img{
     width: 120px;
@@ -215,9 +256,14 @@ nav ul li a:hover {
 .container2{
     display: none;
 }
-/* portfolio */
+/* PORTFOLIO */
 #portfolio{
     padding: 50px 0;
+    scale: 0.8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
 }
 #logo_sp{
     width: 50px;
@@ -496,6 +542,11 @@ label{
 /* NS journey */
 #army{
     padding: 50px 0;
+    scale: 0.8;
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: entry;
 }
 .army-list{
     display: grid;

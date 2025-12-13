@@ -10,7 +10,10 @@
 <body>
     <div id="header">
         <div class="background">
-
+            <video autoplay muted loop id="myVideo">
+                <source src="./images/bg_actual.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
         </div>
         <div class="container">
             <nav>
@@ -89,8 +92,9 @@ leadership, teamwork, and adaptability as a junior commander in the army, which 
                     </div>
                     <div class="tab-contents" id="pas">
                         <ul>
-                            <li><span>2021 Apr - 2024 Apr</span><br>Diploma in Applied AI & Analytics, Singapore Polytechnic</li>
-                            <li><span>2017 Jan - 2020 Sept</span><br>GCE O's Level, Hua Yi Secondary School</li>
+                            <li><span>Basketball</span><br>Always spend my weekened playing with friends/alone.
+                                <br>Joined multiple ActiveSG competition to experience the fun in game</li>
+                            <li><span>BlackPink</span><br></li>
                         </ul>
                     </div>
                 </div>
@@ -146,6 +150,10 @@ leadership, teamwork, and adaptability as a junior commander in the army, which 
             <img id="ai_eg" src="images/AIEG.jpg" alt="">
         </div>
     </div>
+    <div class="modal" id="MyModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
     <!-- Portfolio -->
     <div id="portfolio">
         <div class="container">
@@ -178,7 +186,6 @@ leadership, teamwork, and adaptability as a junior commander in the army, which 
                 </p>
                 <label for="ch">Read more</label>
             </div>
-
             <div class="worklist">
                 <div class="work">
                     <img id="grp-img" src="images/fyp_grppic.jpg" alt="">
@@ -187,10 +194,6 @@ leadership, teamwork, and adaptability as a junior commander in the army, which 
                         <p>Farewell picture of our team with our FYP client, SportSG
                             as we mark the end of the project</p>
                         <a onclick="openIMG('grp')"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                    <div class="modal" id="MyModal">
-                        <span class="close">&times;</span>
-                        <img class="modal-content" id="img01">
                     </div>
                 </div>
                 <div class="work">
@@ -229,7 +232,7 @@ leadership, teamwork, and adaptability as a junior commander in the army, which 
     <!-- NS Journey -->
     <div id="army">
         <div class="container">
-            <h1 class="subtitle">National Service (NS) Journey</h1>
+            <h1 class="subtitle">National Service (NS) Journey <img src="images/trophy.jpg" alt=""></h1>
             <div class="army-list">
                 <div class="journey">
                     <div class="mySlides_NS fade">
@@ -292,10 +295,10 @@ leadership, teamwork, and adaptability as a junior commander in the army, which 
         <div class="copyright">
             <p>Copyright © Yu Yang. All rights reserved</p>
         </div>
-        <audio autoplay loop>
+        <!-- <audio autoplay loop>
             <source src="BLACKPINK_AIIYL.mp3" type="audio/mpeg">
             <source src="blue.mp3" type="audio/mpeg">
-        </audio>
+        </audio> -->
     </div>
 
 <!-- Function to show different abouts me -->
