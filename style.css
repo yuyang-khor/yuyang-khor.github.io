@@ -58,6 +58,8 @@ nav{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 100;
+    position: absolute;
 }
 nav ul li{
     display: inline-block;
